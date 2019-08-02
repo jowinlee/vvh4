@@ -9,31 +9,34 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col pt-2">
-                    <button class="btn btn-sm purple-gradient" id="menu-toggle">Categories</button>
+                    <button class="btn btn-sm purple-gradient" id="menu-toggle" lang="en">Categories</button>
+                    <div id="langChanger">
+                        <a href="#" onclick="window.lang.change('en'); return false;">English</a> | <a href="#" onclick="window.lang.change('fr'); return false;">French</a>
+                    </div>
                 </div>
                 <div class="col py-3">
-                    <p class="text-right text-white my-0">Already have an account? <a class="text-danger" href="https://createur.virtualvisiblehands.com">Login</a></p>
+                    <p class="text-right text-white my-0" lang="en">Already have an account? <a class="text-danger" href="https://createur.virtualvisiblehands.com" lang="en">Login</a></p>
                 </div>
             </div>
         </div>
     </div>
 	<div class="d-flex" id="wrapper">
     	<div class="bg-light border-right" id="sidebar-wrapper">
-      		<div class="sidebar-heading text-center">Templates Category</div>
+      		<div class="sidebar-heading text-center" lang="en">Templates Category</div>
       		<div class="list-group list-group-flush" id="templateTab" role="tablist">
-               	<a class="list-group-item active" data-toggle="tab" href="#all" role="tab" aria-controls="all">All</a>       
-               	<a class="list-group-item" data-toggle="tab" href="#enterprice" role="tab" aria-controls="enterprice">Enterprise</a>                
-                <a class="list-group-item" data-toggle="tab" href="#destination" role="tab" aria-controls="destination">Page De Destination</a>
-                <a class="list-group-item" data-toggle="tab" href="#prof" role="tab" aria-controls="prof">Services Professionnels</a>
-                <a class="list-group-item" data-toggle="tab" href="#restau" role="tab" aria-controls="restau">Restauration Et Alimentation</a>
-                <a class="list-group-item" data-toggle="tab" href="#vide" role="tab" aria-controls="vide">Vide</a>
-                <a class="list-group-item" data-toggle="tab" href="#boutique" role="tab" aria-controls="boutique">Boutique En ligne</a>
-                <a class="list-group-item" data-toggle="tab" href="#evenements" role="tab" aria-controls="evenements">Événements</a>
-                <a class="list-group-item" data-toggle="tab" href="#folio" role="tab" aria-controls="folio">Portfolio et CV</a>
-                <a class="list-group-item" data-toggle="tab" href="#voyages" role="tab" aria-controls="voyages">Voyages</a>
-                <a class="list-group-item" data-toggle="tab" href="#title" role="tab" aria-controls="title">Title or question</a>
-                <a class="list-group-item" data-toggle="tab" href="#education" role="tab" aria-controls="education">Communauté et Education</a>
-                <a class="list-group-item" data-toggle="tab" href="#blog" role="tab" aria-controls="blog">Blog</a>
+               	<a class="list-group-item active" data-toggle="tab" href="#all" role="tab" aria-controls="all" lang="en">All</a>       
+               	<a class="list-group-item" data-toggle="tab" href="#enterprice" role="tab" aria-controls="enterprice" lang="en">Enterprise</a>                
+                <a class="list-group-item" data-toggle="tab" href="#destination" role="tab" aria-controls="destination" lang="en">Page De Destination</a>
+                <a class="list-group-item" data-toggle="tab" href="#prof" role="tab" aria-controls="prof" lang="en">Services Professionnels</a>
+                <a class="list-group-item" data-toggle="tab" href="#restau" role="tab" aria-controls="restau" lang="en">Restauration Et Alimentation</a>
+                <a class="list-group-item" data-toggle="tab" href="#vide" role="tab" aria-controls="vide" lang="en">Vide</a>
+                <a class="list-group-item" data-toggle="tab" href="#boutique" role="tab" aria-controls="boutique" lang="en">Boutique En ligne</a>
+                <a class="list-group-item" data-toggle="tab" href="#evenements" role="tab" aria-controls="evenements" lang="en">Événements</a>
+                <a class="list-group-item" data-toggle="tab" href="#folio" role="tab" aria-controls="folio" lang="en">Portfolio et CV</a>
+                <a class="list-group-item" data-toggle="tab" href="#voyages" role="tab" aria-controls="voyages" lang="en">Voyages</a>
+                <a class="list-group-item" data-toggle="tab" href="#title" role="tab" aria-controls="title" lang="en">Title or question</a>
+                <a class="list-group-item" data-toggle="tab" href="#education" role="tab" aria-controls="education" lang="en">Communauté et Education</a>
+                <a class="list-group-item" data-toggle="tab" href="#blog" role="tab" aria-controls="blog" lang="en">Blog</a>
       		</div>
     	</div>
               
@@ -78,8 +81,8 @@
             </header>
             <main style="min-height: 592px;">
       		<div class="container-fluid text-center">
-        		<h1>Choose a template to start from</h1>
-                <p>Each template is natively responsive and can be fully customized to your liking.</p>
+        		<h1 lang="en">Choose a template to start from</h1>
+                <p lang="en">Each template is natively responsive and can be fully customized to your liking.</p>
       		</div>
       		<div class="tab-content">
                 <?php
@@ -87,7 +90,7 @@
                 ?>
                 <div class="tab-pane active" id="all" role="tabpanel">
                 	<div class="container">
-                		<h2>All Templates</h2><hr>
+                		<h2 lang="en">All Templates</h2><hr>
                         <div class="row">
                     		<?php  
                                 foreach($templatesData as $template) {
@@ -99,7 +102,7 @@
                 </div>
                 <div class="tab-pane" id="enterprice" role="tabpanel">
                 	<div class="container">
-                		<h2>Enterprise</h2><hr>
+                		<h2 lang="en">Enterprise</h2><hr>
                 		<div class="row">
                 			<?php  
                                 foreach($templatesData as $template) {
@@ -113,7 +116,7 @@
                 </div>
                 <div class="tab-pane" id="destination" role="tabpanel">
                 	<div class="container">
-                		<h2>Page De Destination</h2><hr>
+                		<h2 lang="en">Page De Destination</h2><hr>
                 		<div class="row">
                 			<?php
                                 foreach($templatesData as $template) {
@@ -127,7 +130,7 @@
                 </div>
                 <div class="tab-pane" id="prof" role="tabpanel">
                 	<div class="container">
-                		<h2>Services Professionnels</h2><hr>
+                		<h2 lang="en">Services Professionnels</h2><hr>
                 		<div class="row">
                 			<?php
                                 foreach($templatesData as $template) {
@@ -141,7 +144,7 @@
                 </div>
                 <div class="tab-pane" id="restau" role="tabpanel">
                 	<div class="container">
-                		<h2>Restauration Et Alimentation</h2><hr>
+                		<h2 lang="en">Restauration Et Alimentation</h2><hr>
                 		<div class="row">
                 			<?php
                                 foreach($templatesData as $template) {
@@ -155,7 +158,7 @@
                 </div>
                 <div class="tab-pane" id="vide" role="tabpanel">
                 	<div class="container">
-                		<h2>Vide</h2><hr>
+                		<h2 lang="en">Vide</h2><hr>
                 		<div class="row">
                 			<?php
                                 foreach($templatesData as $template) {
@@ -169,7 +172,7 @@
                 </div>
                 <div class="tab-pane" id="boutique" role="tabpanel">
                 	<div class="container">
-                		<h2>Boutique En ligne</h2><hr>
+                		<h2 lang="en">Boutique En ligne</h2><hr>
                 		<div class="row">
                 			<?php
                                 foreach($templatesData as $template) {
@@ -183,7 +186,7 @@
                 </div>
                 <div class="tab-pane" id="evenements" role="tabpanel">
                 	<div class="container">
-                		<h2>Événements</h2><hr>
+                		<h2 lang="en">Événements</h2><hr>
                 		<div class="row">
                 			<?php
                                 foreach($templatesData as $template) {
@@ -197,7 +200,7 @@
                 </div>
                 <div class="tab-pane" id="folio" role="tabpanel">
                 	<div class="container">
-                		<h2>Portfolio et CV</h2><hr>
+                		<h2 lang="en">Portfolio et CV</h2><hr>
                 		<div class="row">
                 			<?php
                                 foreach($templatesData as $template) {
@@ -211,7 +214,7 @@
                 </div>
                 <div class="tab-pane" id="voyages" role="tabpanel">
                 	<div class="container">
-                		<h2>Voyages</h2><hr>
+                		<h2 lang="en">Voyages</h2><hr>
                 		<div class="row">
                 			<?php
                                 foreach($templatesData as $template) {
@@ -225,7 +228,7 @@
                 </div>
                 <div class="tab-pane" id="title" role="tabpanel">
                 	<div class="container">
-                		<h2>Title or question</h2><hr>
+                		<h2 lang="en">Title or question</h2><hr>
                 		<div class="row">
                 			<?php
                                 foreach($templatesData as $template) {
@@ -239,7 +242,7 @@
                 </div>
                 <div class="tab-pane" id="education" role="tabpanel">
                 	<div class="container">
-                		<h2>Communauté et Education</h2><hr>
+                		<h2 lang="en">Communauté et Education</h2><hr>
                 		<div class="row">
                 			<?php
                                 foreach($templatesData as $template) {
@@ -253,7 +256,7 @@
                 </div>
                 <div class="tab-pane" id="blog" role="tabpanel">
                 	<div class="container">
-                		<h2>Blog</h2><hr>
+                		<h2 lang="en">Blog</h2><hr>
                 		<div class="row">
                 			<?php
                                 foreach($templatesData as $template) {
